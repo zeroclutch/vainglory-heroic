@@ -1,0 +1,100 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>Vainglory Counter Data</title>
+    <!--External styles-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+    <!--link rel="stylesheet" href="https://unpkg.com/buefy/lib/buefy.min.css"-->
+  </head>
+  <body class="has-background-light" style="min-height:100vh;">
+    <div id="app" class="is-hidden" onload="this.removeAttribute('class')">
+      <section class="hero is-primary">
+        <div class="hero-body">
+          <div class="container">
+            <h1 class="title">
+              Vainglorious Counters
+            </h1>
+            <h2 class="subtitle">
+              Counters for heroes in 5v5 ranked matches for patch 3.2.
+            </h2>
+          </div>
+        </div>
+      </section>
+      <section class="content columns has-background-light is-centered is-multiline">
+        <div class="columns column is-8 is-multiline">
+          
+          <div class="column box is-12" style="margin: 20px; padding: 30px;">
+            <div class="dropdown columns is-centered is-multiline is-mobile">
+              <div class="help column is-6 has-text-centered is-paddingless">
+                VIEW MODE
+              </div>
+              <div class="help column is-6 has-text-centered is-paddingless">
+                SKILL TIER
+              </div>
+              <div class="column is-6 has-text-centered is-paddingless">
+                <div class="select is-info">
+                  <select v-model="mode">
+                    <option value="counters">Hero Counters</option>
+                    <option value="winrates">Hero Winrates</option>
+                  </select>
+                </div>
+              </div>
+              <div class="column is-6 has-text-centered is-paddingless">
+                <div class="select is-info">
+                  <select v-model="tier" v-on:change="chooseTier">
+                    <option value="all">All Tiers</option>
+                    <option v-for="(value, key) in data" v-bind:value="key">{{ key }}</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="is-holder column is-3 is-half-tablet is-one-third-desktop" v-for="(value, hero) in dataUntiered" v-show="mode=='winrates'">
+            <div class="box column is-small has-text-centered">
+              <h4 class="title is-4" style="margin-bottom: 5px;">
+                {{ hero }} <i class="fa fa-sm fa-star has-text-warning" v-if="dataUntiered[hero]['_overall'].winrate > .55"></i>
+              </h4>
+              <span class="tag is-success" v-if="dataUntiered[hero]['_overall'].winrate > .55">{{Math.round(dataUntiered[hero]["_overall"].winrate*10000)/100}}%</span>
+              <span class="tag is-danger" v-else-if="dataUntiered[hero]['_overall'].winrate < .40">{{Math.round(dataUntiered[hero]["_overall"].winrate*10000)/100}}%</span>
+              <span class="tag is-primary" v-else-if="dataUntiered[hero]['_overall'].winrate >= .5">{{Math.round(dataUntiered[hero]["_overall"].winrate*10000)/100}}%</span>
+              <span class="tag is-warning" v-else-if="dataUntiered[hero]['_overall'].winrate < .5">{{Math.round(dataUntiered[hero]["_overall"].winrate*10000)/100}}%</span>
+              <span class="tag is-light">{{ dataUntiered[hero]["_overall"].matches }} matches</span>
+            </div>
+          </div>
+          
+          <div class="is-holder column is-half-tablet is-one-third-desktop" v-for="(matchup, index) in counters" v-show="mode=='counters'">
+            <div class="box column is-small has-text-centered" style="position:relative;">
+              <h6 class="title is-6 is-clipped" style="margin-bottom: 5px;">
+                <div class="tag is-light" style="position: absolute; top: 1px; left: 1px; border-radius: 6px 0 4px 0">{{ index + 1 }}</div>
+                <span class="has-text-success">{{ matchup.winner }}</span> beats <span class="has-text-danger">{{ matchup.loser }}</span>
+              </h6>
+              <span class="tag is-success" v-if="matchup.winrate > .56">{{Math.round(matchup.winrate*10000)/100}}%</span>
+              <span class="tag is-danger" v-else-if="matchup.winrate < .40">{{Math.round(matchup.winrate*10000)/100}}%</span>
+              <span class="tag is-primary" v-else-if="matchup.winrate >= .5">{{Math.round(matchup.winrate*10000)/100}}%</span>
+              <span class="tag is-warning" v-else-if="matchup.winrate < .5">{{Math.round(matchup.winrate*10000)/100}}%</span>
+              <span class="tag is-info">{{ matchup.matches }} matches</span>
+              <br>
+              <span class="tag is-light">{{Math.round(matchup.difference*10000)/100}}% higher than average {{ matchup.winner}} WR</span>
+            </div>
+          </div>
+          
+          <div v-if="!counters[1]" class="is-centered column is-12 has-text-centered">
+            <h4 class="is-title is-4 has-text-danger is-marginless">
+              <i class="fa fa-exclamation-circle fa-2x"></i><br><br>
+              No data found for this tier.
+            </h4>
+            <p class="help">
+              Try searching with different filters or check again at another time.
+            </p>
+          </div>
+        </div>
+      </section>
+    </div>
+    <!--External assets-->
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
+    <!--script src="https://unpkg.com/buefy"></script-->
+    <script src="client.js"></script>
+  </body>
+</html>
