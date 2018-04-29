@@ -1,0 +1,716 @@
+{
+  "{\"filename\":\"/app/data/options.js\",\"env\":{},\"retainLines\":false,\"highlightCode\":true,\"suppressDeprecationMessages\":false,\"presets\":[],\"plugins\":[],\"ignore\":[],\"code\":true,\"metadata\":true,\"ast\":true,\"comments\":true,\"compact\":\"auto\",\"minified\":false,\"sourceRoot\":\"/app/data\",\"babelrc\":true,\"sourceType\":\"module\",\"moduleIds\":false,\"passPerPreset\":false,\"parserOpts\":false,\"generatorOpts\":false}:6.26.0": {
+    "metadata": {
+      "usedHelpers": [],
+      "marked": [],
+      "modules": {
+        "imports": [],
+        "exports": {
+          "exported": [],
+          "specifiers": []
+        }
+      }
+    },
+    "options": {
+      "filename": "/app/data/options.js",
+      "filenameRelative": "/app/data/options.js",
+      "env": {},
+      "retainLines": false,
+      "highlightCode": true,
+      "suppressDeprecationMessages": false,
+      "presets": [],
+      "plugins": [],
+      "ignore": [],
+      "code": true,
+      "metadata": true,
+      "ast": false,
+      "comments": true,
+      "compact": "auto",
+      "minified": false,
+      "sourceMaps": "both",
+      "sourceMapTarget": "options.js",
+      "sourceFileName": "options.js",
+      "sourceRoot": "/app/data",
+      "babelrc": false,
+      "sourceType": "module",
+      "moduleRoot": "/app/data",
+      "moduleIds": false,
+      "passPerPreset": false,
+      "parserOpts": false,
+      "generatorOpts": false,
+      "basename": "options"
+    },
+    "ignored": false,
+    "code": "const now = new Date();\nconst minus28Days = new Date();\n\nminus28Days.setDate(now.getDate() - 28);\n\nmodule.exports = {\n  page: {\n    offset: 0,\n    limit: 50\n  },\n  sort: 'createdAt', // -createdAt for reverse\n  filter: {\n    'createdAt-start': minus28Days.toISOString(), // ISO Date\n    'createdAt-end': now.toISOString(), // ISO Date\n    playerNames: [],\n    teamNames: [],\n    gameMode: '5v5_pvp_ranked',\n    patchVersion: '3.2'\n  }\n};\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIm9wdGlvbnMuanMiXSwibmFtZXMiOlsibm93IiwiRGF0ZSIsIm1pbnVzMjhEYXlzIiwic2V0RGF0ZSIsImdldERhdGUiLCJtb2R1bGUiLCJleHBvcnRzIiwicGFnZSIsIm9mZnNldCIsImxpbWl0Iiwic29ydCIsImZpbHRlciIsInRvSVNPU3RyaW5nIiwicGxheWVyTmFtZXMiLCJ0ZWFtTmFtZXMiLCJnYW1lTW9kZSIsInBhdGNoVmVyc2lvbiJdLCJtYXBwaW5ncyI6IkFBQUEsTUFBTUEsTUFBTSxJQUFJQyxJQUFKLEVBQVo7QUFDQSxNQUFNQyxjQUFjLElBQUlELElBQUosRUFBcEI7O0FBRUFDLFlBQVlDLE9BQVosQ0FBb0JILElBQUlJLE9BQUosS0FBZ0IsRUFBcEM7O0FBRUFDLE9BQU9DLE9BQVAsR0FBaUI7QUFDZkMsUUFBTTtBQUNKQyxZQUFRLENBREo7QUFFSkMsV0FBTztBQUZILEdBRFM7QUFLZkMsUUFBTSxXQUxTLEVBS0k7QUFDbkJDLFVBQVE7QUFDTix1QkFBbUJULFlBQVlVLFdBQVosRUFEYixFQUN3QztBQUM5QyxxQkFBaUJaLElBQUlZLFdBQUosRUFGWCxFQUU4QjtBQUNwQ0MsaUJBQWEsRUFIUDtBQUlOQyxlQUFXLEVBSkw7QUFLTkMsY0FBVSxnQkFMSjtBQU1OQyxrQkFBYztBQU5SO0FBTk8sQ0FBakIiLCJmaWxlIjoib3B0aW9ucy5qcyIsInNvdXJjZVJvb3QiOiIvYXBwL2RhdGEiLCJzb3VyY2VzQ29udGVudCI6WyJjb25zdCBub3cgPSBuZXcgRGF0ZSgpO1xuY29uc3QgbWludXMyOERheXMgPSBuZXcgRGF0ZSgpO1xuXG5taW51czI4RGF5cy5zZXREYXRlKG5vdy5nZXREYXRlKCkgLSAyOCk7XG5cbm1vZHVsZS5leHBvcnRzID0ge1xuICBwYWdlOiB7XG4gICAgb2Zmc2V0OiAwLFxuICAgIGxpbWl0OiA1MCxcbiAgfSxcbiAgc29ydDogJ2NyZWF0ZWRBdCcsIC8vIC1jcmVhdGVkQXQgZm9yIHJldmVyc2VcbiAgZmlsdGVyOiB7XG4gICAgJ2NyZWF0ZWRBdC1zdGFydCc6IG1pbnVzMjhEYXlzLnRvSVNPU3RyaW5nKCksIC8vIElTTyBEYXRlXG4gICAgJ2NyZWF0ZWRBdC1lbmQnOiBub3cudG9JU09TdHJpbmcoKSwgLy8gSVNPIERhdGVcbiAgICBwbGF5ZXJOYW1lczogW10sXG4gICAgdGVhbU5hbWVzOiBbXSxcbiAgICBnYW1lTW9kZTogJzV2NV9wdnBfcmFua2VkJyxcbiAgICBwYXRjaFZlcnNpb246ICczLjInXG4gIH0sXG59OyJdfQ==",
+    "ast": null,
+    "map": {
+      "version": 3,
+      "sources": [
+        "options.js"
+      ],
+      "names": [
+        "now",
+        "Date",
+        "minus28Days",
+        "setDate",
+        "getDate",
+        "module",
+        "exports",
+        "page",
+        "offset",
+        "limit",
+        "sort",
+        "filter",
+        "toISOString",
+        "playerNames",
+        "teamNames",
+        "gameMode",
+        "patchVersion"
+      ],
+      "mappings": "AAAA,MAAMA,MAAM,IAAIC,IAAJ,EAAZ;AACA,MAAMC,cAAc,IAAID,IAAJ,EAApB;;AAEAC,YAAYC,OAAZ,CAAoBH,IAAII,OAAJ,KAAgB,EAApC;;AAEAC,OAAOC,OAAP,GAAiB;AACfC,QAAM;AACJC,YAAQ,CADJ;AAEJC,WAAO;AAFH,GADS;AAKfC,QAAM,WALS,EAKI;AACnBC,UAAQ;AACN,uBAAmBT,YAAYU,WAAZ,EADb,EACwC;AAC9C,qBAAiBZ,IAAIY,WAAJ,EAFX,EAE8B;AACpCC,iBAAa,EAHP;AAINC,eAAW,EAJL;AAKNC,cAAU,gBALJ;AAMNC,kBAAc;AANR;AANO,CAAjB",
+      "file": "options.js",
+      "sourceRoot": "/app/data",
+      "sourcesContent": [
+        "const now = new Date();\nconst minus28Days = new Date();\n\nminus28Days.setDate(now.getDate() - 28);\n\nmodule.exports = {\n  page: {\n    offset: 0,\n    limit: 50,\n  },\n  sort: 'createdAt', // -createdAt for reverse\n  filter: {\n    'createdAt-start': minus28Days.toISOString(), // ISO Date\n    'createdAt-end': now.toISOString(), // ISO Date\n    playerNames: [],\n    teamNames: [],\n    gameMode: '5v5_pvp_ranked',\n    patchVersion: '3.2'\n  },\n};"
+      ]
+    },
+    "mtime": 1524618351425
+  },
+  "{\"filename\":\"/app/data/tiers.js\",\"env\":{},\"retainLines\":false,\"highlightCode\":true,\"suppressDeprecationMessages\":false,\"presets\":[],\"plugins\":[],\"ignore\":[],\"code\":true,\"metadata\":true,\"ast\":true,\"comments\":true,\"compact\":\"auto\",\"minified\":false,\"sourceRoot\":\"/app/data\",\"babelrc\":true,\"sourceType\":\"module\",\"moduleIds\":false,\"passPerPreset\":false,\"parserOpts\":false,\"generatorOpts\":false}:6.26.0": {
+    "metadata": {
+      "usedHelpers": [],
+      "marked": [],
+      "modules": {
+        "imports": [],
+        "exports": {
+          "exported": [],
+          "specifiers": []
+        }
+      }
+    },
+    "options": {
+      "filename": "/app/data/tiers.js",
+      "filenameRelative": "/app/data/tiers.js",
+      "env": {},
+      "retainLines": false,
+      "highlightCode": true,
+      "suppressDeprecationMessages": false,
+      "presets": [],
+      "plugins": [],
+      "ignore": [],
+      "code": true,
+      "metadata": true,
+      "ast": false,
+      "comments": true,
+      "compact": "auto",
+      "minified": false,
+      "sourceMaps": "both",
+      "sourceMapTarget": "tiers.js",
+      "sourceFileName": "tiers.js",
+      "sourceRoot": "/app/data",
+      "babelrc": false,
+      "sourceType": "module",
+      "moduleRoot": "/app/data",
+      "moduleIds": false,
+      "passPerPreset": false,
+      "parserOpts": false,
+      "generatorOpts": false,
+      "basename": "tiers"
+    },
+    "ignored": false,
+    "code": "module.exports = new Map([[-1, \"Unranked\"], [0, \"Just Beginning\"], [327, \"Getting There\"], [654, \"Rock Solid\"], [981, \"Worthy Foe\"], [1250, \"Got Swagger\"], [1400, \"Credible Threat\"], [1600, \"The Hotness\"], [1800, \"Simply Amazing\"], [2000, \"Pinnacle of Awesome\"], [2400, \"Vainglorious\"]]);\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInRpZXJzLmpzIl0sIm5hbWVzIjpbIm1vZHVsZSIsImV4cG9ydHMiLCJNYXAiXSwibWFwcGluZ3MiOiJBQUFBQSxPQUFPQyxPQUFQLEdBQWlCLElBQUlDLEdBQUosQ0FBUSxDQUNyQixDQUFFLENBQUMsQ0FBSCxFQUFNLFVBQU4sQ0FEcUIsRUFFckIsQ0FBRSxDQUFGLEVBQUssZ0JBQUwsQ0FGcUIsRUFHckIsQ0FBRSxHQUFGLEVBQU8sZUFBUCxDQUhxQixFQUlyQixDQUFFLEdBQUYsRUFBTyxZQUFQLENBSnFCLEVBS3JCLENBQUUsR0FBRixFQUFPLFlBQVAsQ0FMcUIsRUFNckIsQ0FBRSxJQUFGLEVBQVEsYUFBUixDQU5xQixFQU9yQixDQUFFLElBQUYsRUFBUSxpQkFBUixDQVBxQixFQVFyQixDQUFFLElBQUYsRUFBUSxhQUFSLENBUnFCLEVBU3JCLENBQUUsSUFBRixFQUFRLGdCQUFSLENBVHFCLEVBVXJCLENBQUUsSUFBRixFQUFRLHFCQUFSLENBVnFCLEVBV3JCLENBQUUsSUFBRixFQUFRLGNBQVIsQ0FYcUIsQ0FBUixDQUFqQiIsImZpbGUiOiJ0aWVycy5qcyIsInNvdXJjZVJvb3QiOiIvYXBwL2RhdGEiLCJzb3VyY2VzQ29udGVudCI6WyJtb2R1bGUuZXhwb3J0cyA9IG5ldyBNYXAoW1xuICAgIFsgLTEsIFwiVW5yYW5rZWRcIiBdLFxuICAgIFsgMCwgXCJKdXN0IEJlZ2lubmluZ1wiIF0sXG4gICAgWyAzMjcsIFwiR2V0dGluZyBUaGVyZVwiIF0sXG4gICAgWyA2NTQsIFwiUm9jayBTb2xpZFwiIF0sXG4gICAgWyA5ODEsIFwiV29ydGh5IEZvZVwiIF0sXG4gICAgWyAxMjUwLCBcIkdvdCBTd2FnZ2VyXCIgXSxcbiAgICBbIDE0MDAsIFwiQ3JlZGlibGUgVGhyZWF0XCIgXSxcbiAgICBbIDE2MDAsIFwiVGhlIEhvdG5lc3NcIiBdLFxuICAgIFsgMTgwMCwgXCJTaW1wbHkgQW1hemluZ1wiIF0sXG4gICAgWyAyMDAwLCBcIlBpbm5hY2xlIG9mIEF3ZXNvbWVcIiBdLFxuICAgIFsgMjQwMCwgXCJWYWluZ2xvcmlvdXNcIiBdXG5dKTsiXX0=",
+    "ast": null,
+    "map": {
+      "version": 3,
+      "sources": [
+        "tiers.js"
+      ],
+      "names": [
+        "module",
+        "exports",
+        "Map"
+      ],
+      "mappings": "AAAAA,OAAOC,OAAP,GAAiB,IAAIC,GAAJ,CAAQ,CACrB,CAAE,CAAC,CAAH,EAAM,UAAN,CADqB,EAErB,CAAE,CAAF,EAAK,gBAAL,CAFqB,EAGrB,CAAE,GAAF,EAAO,eAAP,CAHqB,EAIrB,CAAE,GAAF,EAAO,YAAP,CAJqB,EAKrB,CAAE,GAAF,EAAO,YAAP,CALqB,EAMrB,CAAE,IAAF,EAAQ,aAAR,CANqB,EAOrB,CAAE,IAAF,EAAQ,iBAAR,CAPqB,EAQrB,CAAE,IAAF,EAAQ,aAAR,CARqB,EASrB,CAAE,IAAF,EAAQ,gBAAR,CATqB,EAUrB,CAAE,IAAF,EAAQ,qBAAR,CAVqB,EAWrB,CAAE,IAAF,EAAQ,cAAR,CAXqB,CAAR,CAAjB",
+      "file": "tiers.js",
+      "sourceRoot": "/app/data",
+      "sourcesContent": [
+        "module.exports = new Map([\n    [ -1, \"Unranked\" ],\n    [ 0, \"Just Beginning\" ],\n    [ 327, \"Getting There\" ],\n    [ 654, \"Rock Solid\" ],\n    [ 981, \"Worthy Foe\" ],\n    [ 1250, \"Got Swagger\" ],\n    [ 1400, \"Credible Threat\" ],\n    [ 1600, \"The Hotness\" ],\n    [ 1800, \"Simply Amazing\" ],\n    [ 2000, \"Pinnacle of Awesome\" ],\n    [ 2400, \"Vainglorious\" ]\n]);"
+      ]
+    },
+    "mtime": 1524617997408
+  },
+  "{\"filename\":\"/app/dist/findMatches.js\",\"env\":{},\"retainLines\":false,\"highlightCode\":true,\"suppressDeprecationMessages\":false,\"presets\":[],\"plugins\":[],\"ignore\":[],\"code\":true,\"metadata\":true,\"ast\":true,\"comments\":true,\"compact\":\"auto\",\"minified\":false,\"sourceRoot\":\"/app/dist\",\"babelrc\":true,\"sourceType\":\"module\",\"moduleIds\":false,\"passPerPreset\":false,\"parserOpts\":false,\"generatorOpts\":false}:6.26.0": {
+    "metadata": {
+      "usedHelpers": [],
+      "marked": [],
+      "modules": {
+        "imports": [],
+        "exports": {
+          "exported": [],
+          "specifiers": []
+        }
+      }
+    },
+    "options": {
+      "filename": "/app/dist/findMatches.js",
+      "filenameRelative": "/app/dist/findMatches.js",
+      "env": {},
+      "retainLines": false,
+      "highlightCode": true,
+      "suppressDeprecationMessages": false,
+      "presets": [],
+      "plugins": [],
+      "ignore": [],
+      "code": true,
+      "metadata": true,
+      "ast": false,
+      "comments": true,
+      "compact": "auto",
+      "minified": false,
+      "sourceMaps": "both",
+      "sourceMapTarget": "findMatches.js",
+      "sourceFileName": "findMatches.js",
+      "sourceRoot": "/app/dist",
+      "babelrc": false,
+      "sourceType": "module",
+      "moduleRoot": "/app/dist",
+      "moduleIds": false,
+      "passPerPreset": false,
+      "parserOpts": false,
+      "generatorOpts": false,
+      "basename": "findMatches"
+    },
+    "ignored": false,
+    "code": "const options = require('../data/options');\nconst vainglory = require('vainglory');\n\nmodule.exports = async ign => {\n  options.filter.playerNames = [ign];\n  //Get player info from server\n  const promise = () => {\n    return vainglory.setRegion('na').matches.collection(options);\n  };\n  let res = await promise();\n  return res;\n};\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImZpbmRNYXRjaGVzLmpzIl0sIm5hbWVzIjpbIm9wdGlvbnMiLCJyZXF1aXJlIiwidmFpbmdsb3J5IiwibW9kdWxlIiwiZXhwb3J0cyIsImlnbiIsImZpbHRlciIsInBsYXllck5hbWVzIiwicHJvbWlzZSIsInNldFJlZ2lvbiIsIm1hdGNoZXMiLCJjb2xsZWN0aW9uIiwicmVzIl0sIm1hcHBpbmdzIjoiQUFBQSxNQUFNQSxVQUFVQyxRQUFRLGlCQUFSLENBQWhCO0FBQ0EsTUFBTUMsWUFBWUQsUUFBUSxXQUFSLENBQWxCOztBQUVBRSxPQUFPQyxPQUFQLEdBQWlCLE1BQU9DLEdBQVAsSUFBZTtBQUM5QkwsVUFBUU0sTUFBUixDQUFlQyxXQUFmLEdBQTZCLENBQUNGLEdBQUQsQ0FBN0I7QUFDQTtBQUNBLFFBQU1HLFVBQVUsTUFBTTtBQUFFLFdBQVFOLFVBQVVPLFNBQVYsQ0FBb0IsSUFBcEIsRUFBMEJDLE9BQTFCLENBQWtDQyxVQUFsQyxDQUE2Q1gsT0FBN0MsQ0FBUjtBQUFpRSxHQUF6RjtBQUNBLE1BQUlZLE1BQU0sTUFBTUosU0FBaEI7QUFDQSxTQUFPSSxHQUFQO0FBQ0QsQ0FORCIsImZpbGUiOiJmaW5kTWF0Y2hlcy5qcyIsInNvdXJjZVJvb3QiOiIvYXBwL2Rpc3QiLCJzb3VyY2VzQ29udGVudCI6WyJjb25zdCBvcHRpb25zID0gcmVxdWlyZSgnLi4vZGF0YS9vcHRpb25zJyk7XG5jb25zdCB2YWluZ2xvcnkgPSByZXF1aXJlKCd2YWluZ2xvcnknKVxuXG5tb2R1bGUuZXhwb3J0cyA9IGFzeW5jIChpZ24pID0+IHtcbiAgb3B0aW9ucy5maWx0ZXIucGxheWVyTmFtZXMgPSBbaWduXVxuICAvL0dldCBwbGF5ZXIgaW5mbyBmcm9tIHNlcnZlclxuICBjb25zdCBwcm9taXNlID0gKCkgPT4geyByZXR1cm4gKHZhaW5nbG9yeS5zZXRSZWdpb24oJ25hJykubWF0Y2hlcy5jb2xsZWN0aW9uKG9wdGlvbnMpKTsgfVxuICBsZXQgcmVzID0gYXdhaXQgcHJvbWlzZSgpO1xuICByZXR1cm4gcmVzO1xufSJdfQ==",
+    "ast": null,
+    "map": {
+      "version": 3,
+      "sources": [
+        "findMatches.js"
+      ],
+      "names": [
+        "options",
+        "require",
+        "vainglory",
+        "module",
+        "exports",
+        "ign",
+        "filter",
+        "playerNames",
+        "promise",
+        "setRegion",
+        "matches",
+        "collection",
+        "res"
+      ],
+      "mappings": "AAAA,MAAMA,UAAUC,QAAQ,iBAAR,CAAhB;AACA,MAAMC,YAAYD,QAAQ,WAAR,CAAlB;;AAEAE,OAAOC,OAAP,GAAiB,MAAOC,GAAP,IAAe;AAC9BL,UAAQM,MAAR,CAAeC,WAAf,GAA6B,CAACF,GAAD,CAA7B;AACA;AACA,QAAMG,UAAU,MAAM;AAAE,WAAQN,UAAUO,SAAV,CAAoB,IAApB,EAA0BC,OAA1B,CAAkCC,UAAlC,CAA6CX,OAA7C,CAAR;AAAiE,GAAzF;AACA,MAAIY,MAAM,MAAMJ,SAAhB;AACA,SAAOI,GAAP;AACD,CAND",
+      "file": "findMatches.js",
+      "sourceRoot": "/app/dist",
+      "sourcesContent": [
+        "const options = require('../data/options');\nconst vainglory = require('vainglory')\n\nmodule.exports = async (ign) => {\n  options.filter.playerNames = [ign]\n  //Get player info from server\n  const promise = () => { return (vainglory.setRegion('na').matches.collection(options)); }\n  let res = await promise();\n  return res;\n}"
+      ]
+    },
+    "mtime": 1524618569427
+  },
+  "{\"filename\":\"/app/dist/mergeObjects.js\",\"env\":{},\"retainLines\":false,\"highlightCode\":true,\"suppressDeprecationMessages\":false,\"presets\":[],\"plugins\":[],\"ignore\":[],\"code\":true,\"metadata\":true,\"ast\":true,\"comments\":true,\"compact\":\"auto\",\"minified\":false,\"sourceRoot\":\"/app/dist\",\"babelrc\":true,\"sourceType\":\"module\",\"moduleIds\":false,\"passPerPreset\":false,\"parserOpts\":false,\"generatorOpts\":false}:6.26.0": {
+    "metadata": {
+      "usedHelpers": [],
+      "marked": [],
+      "modules": {
+        "imports": [],
+        "exports": {
+          "exported": [],
+          "specifiers": []
+        }
+      }
+    },
+    "options": {
+      "filename": "/app/dist/mergeObjects.js",
+      "filenameRelative": "/app/dist/mergeObjects.js",
+      "env": {},
+      "retainLines": false,
+      "highlightCode": true,
+      "suppressDeprecationMessages": false,
+      "presets": [],
+      "plugins": [],
+      "ignore": [],
+      "code": true,
+      "metadata": true,
+      "ast": false,
+      "comments": true,
+      "compact": "auto",
+      "minified": false,
+      "sourceMaps": "both",
+      "sourceMapTarget": "mergeObjects.js",
+      "sourceFileName": "mergeObjects.js",
+      "sourceRoot": "/app/dist",
+      "babelrc": false,
+      "sourceType": "module",
+      "moduleRoot": "/app/dist",
+      "moduleIds": false,
+      "passPerPreset": false,
+      "parserOpts": false,
+      "generatorOpts": false,
+      "basename": "mergeObjects"
+    },
+    "ignored": false,
+    "code": "/**\n * Simple object check.\n * @param item\n * @returns {boolean}\n */\nfunction isObject(item) {\n  return item && typeof item === 'object' && !Array.isArray(item);\n}\n\n/**\n * Deep merge two objects.\n * @param target\n * @param ...sources\n */\nmodule.exports = function mergeDeep(target, ...sources) {\n  if (!sources.length) return target;\n  const source = sources.shift();\n\n  if (isObject(target) && isObject(source)) {\n    for (const key in source) {\n      if (isObject(source[key])) {\n        if (!target[key]) Object.assign(target, { [key]: {} });\n        mergeDeep(target[key], source[key]);\n      } else {\n        Object.assign(target, { [key]: isObject(source[key]) && typeof source[key] === \"\" ? source[key] : target[key] + source[key] });\n      }\n    }\n  }\n\n  return mergeDeep(target, ...sources);\n};\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIm1lcmdlT2JqZWN0cy5qcyJdLCJuYW1lcyI6WyJpc09iamVjdCIsIml0ZW0iLCJBcnJheSIsImlzQXJyYXkiLCJtb2R1bGUiLCJleHBvcnRzIiwibWVyZ2VEZWVwIiwidGFyZ2V0Iiwic291cmNlcyIsImxlbmd0aCIsInNvdXJjZSIsInNoaWZ0Iiwia2V5IiwiT2JqZWN0IiwiYXNzaWduIl0sIm1hcHBpbmdzIjoiQUFBQTs7Ozs7QUFLQSxTQUFTQSxRQUFULENBQWtCQyxJQUFsQixFQUF3QjtBQUN0QixTQUFRQSxRQUFRLE9BQU9BLElBQVAsS0FBZ0IsUUFBeEIsSUFBb0MsQ0FBQ0MsTUFBTUMsT0FBTixDQUFjRixJQUFkLENBQTdDO0FBQ0Q7O0FBRUQ7Ozs7O0FBS0FHLE9BQU9DLE9BQVAsR0FBaUIsU0FBU0MsU0FBVCxDQUFtQkMsTUFBbkIsRUFBMkIsR0FBR0MsT0FBOUIsRUFBdUM7QUFDdEQsTUFBSSxDQUFDQSxRQUFRQyxNQUFiLEVBQXFCLE9BQU9GLE1BQVA7QUFDckIsUUFBTUcsU0FBU0YsUUFBUUcsS0FBUixFQUFmOztBQUVBLE1BQUlYLFNBQVNPLE1BQVQsS0FBb0JQLFNBQVNVLE1BQVQsQ0FBeEIsRUFBMEM7QUFDeEMsU0FBSyxNQUFNRSxHQUFYLElBQWtCRixNQUFsQixFQUEwQjtBQUN4QixVQUFJVixTQUFTVSxPQUFPRSxHQUFQLENBQVQsQ0FBSixFQUEyQjtBQUN6QixZQUFJLENBQUNMLE9BQU9LLEdBQVAsQ0FBTCxFQUFrQkMsT0FBT0MsTUFBUCxDQUFjUCxNQUFkLEVBQXNCLEVBQUUsQ0FBQ0ssR0FBRCxHQUFPLEVBQVQsRUFBdEI7QUFDbEJOLGtCQUFVQyxPQUFPSyxHQUFQLENBQVYsRUFBdUJGLE9BQU9FLEdBQVAsQ0FBdkI7QUFDRCxPQUhELE1BR087QUFDTEMsZUFBT0MsTUFBUCxDQUFjUCxNQUFkLEVBQXNCLEVBQUUsQ0FBQ0ssR0FBRCxHQUFRWixTQUFTVSxPQUFPRSxHQUFQLENBQVQsS0FBeUIsT0FBT0YsT0FBT0UsR0FBUCxDQUFQLEtBQXVCLEVBQWpELEdBQXVERixPQUFPRSxHQUFQLENBQXZELEdBQXFFTCxPQUFPSyxHQUFQLElBQWNGLE9BQU9FLEdBQVAsQ0FBNUYsRUFBdEI7QUFDRDtBQUNGO0FBQ0Y7O0FBRUQsU0FBT04sVUFBVUMsTUFBVixFQUFrQixHQUFHQyxPQUFyQixDQUFQO0FBQ0QsQ0FoQkQiLCJmaWxlIjoibWVyZ2VPYmplY3RzLmpzIiwic291cmNlUm9vdCI6Ii9hcHAvZGlzdCIsInNvdXJjZXNDb250ZW50IjpbIi8qKlxuICogU2ltcGxlIG9iamVjdCBjaGVjay5cbiAqIEBwYXJhbSBpdGVtXG4gKiBAcmV0dXJucyB7Ym9vbGVhbn1cbiAqL1xuZnVuY3Rpb24gaXNPYmplY3QoaXRlbSkge1xuICByZXR1cm4gKGl0ZW0gJiYgdHlwZW9mIGl0ZW0gPT09ICdvYmplY3QnICYmICFBcnJheS5pc0FycmF5KGl0ZW0pKTtcbn1cblxuLyoqXG4gKiBEZWVwIG1lcmdlIHR3byBvYmplY3RzLlxuICogQHBhcmFtIHRhcmdldFxuICogQHBhcmFtIC4uLnNvdXJjZXNcbiAqL1xubW9kdWxlLmV4cG9ydHMgPSBmdW5jdGlvbiBtZXJnZURlZXAodGFyZ2V0LCAuLi5zb3VyY2VzKSB7XG4gIGlmICghc291cmNlcy5sZW5ndGgpIHJldHVybiB0YXJnZXQ7XG4gIGNvbnN0IHNvdXJjZSA9IHNvdXJjZXMuc2hpZnQoKTtcblxuICBpZiAoaXNPYmplY3QodGFyZ2V0KSAmJiBpc09iamVjdChzb3VyY2UpKSB7XG4gICAgZm9yIChjb25zdCBrZXkgaW4gc291cmNlKSB7XG4gICAgICBpZiAoaXNPYmplY3Qoc291cmNlW2tleV0pKSB7XG4gICAgICAgIGlmICghdGFyZ2V0W2tleV0pIE9iamVjdC5hc3NpZ24odGFyZ2V0LCB7IFtrZXldOiB7fSB9KTtcbiAgICAgICAgbWVyZ2VEZWVwKHRhcmdldFtrZXldLCBzb3VyY2Vba2V5XSk7XG4gICAgICB9IGVsc2Uge1xuICAgICAgICBPYmplY3QuYXNzaWduKHRhcmdldCwgeyBba2V5XTogKGlzT2JqZWN0KHNvdXJjZVtrZXldKSAmJiB0eXBlb2Ygc291cmNlW2tleV0gPT09IFwiXCIpID8gc291cmNlW2tleV0gOiB0YXJnZXRba2V5XSArIHNvdXJjZVtrZXldIH0pO1xuICAgICAgfVxuICAgIH1cbiAgfVxuXG4gIHJldHVybiBtZXJnZURlZXAodGFyZ2V0LCAuLi5zb3VyY2VzKTtcbn0iXX0=",
+    "ast": null,
+    "map": {
+      "version": 3,
+      "sources": [
+        "mergeObjects.js"
+      ],
+      "names": [
+        "isObject",
+        "item",
+        "Array",
+        "isArray",
+        "module",
+        "exports",
+        "mergeDeep",
+        "target",
+        "sources",
+        "length",
+        "source",
+        "shift",
+        "key",
+        "Object",
+        "assign"
+      ],
+      "mappings": "AAAA;;;;;AAKA,SAASA,QAAT,CAAkBC,IAAlB,EAAwB;AACtB,SAAQA,QAAQ,OAAOA,IAAP,KAAgB,QAAxB,IAAoC,CAACC,MAAMC,OAAN,CAAcF,IAAd,CAA7C;AACD;;AAED;;;;;AAKAG,OAAOC,OAAP,GAAiB,SAASC,SAAT,CAAmBC,MAAnB,EAA2B,GAAGC,OAA9B,EAAuC;AACtD,MAAI,CAACA,QAAQC,MAAb,EAAqB,OAAOF,MAAP;AACrB,QAAMG,SAASF,QAAQG,KAAR,EAAf;;AAEA,MAAIX,SAASO,MAAT,KAAoBP,SAASU,MAAT,CAAxB,EAA0C;AACxC,SAAK,MAAME,GAAX,IAAkBF,MAAlB,EAA0B;AACxB,UAAIV,SAASU,OAAOE,GAAP,CAAT,CAAJ,EAA2B;AACzB,YAAI,CAACL,OAAOK,GAAP,CAAL,EAAkBC,OAAOC,MAAP,CAAcP,MAAd,EAAsB,EAAE,CAACK,GAAD,GAAO,EAAT,EAAtB;AAClBN,kBAAUC,OAAOK,GAAP,CAAV,EAAuBF,OAAOE,GAAP,CAAvB;AACD,OAHD,MAGO;AACLC,eAAOC,MAAP,CAAcP,MAAd,EAAsB,EAAE,CAACK,GAAD,GAAQZ,SAASU,OAAOE,GAAP,CAAT,KAAyB,OAAOF,OAAOE,GAAP,CAAP,KAAuB,EAAjD,GAAuDF,OAAOE,GAAP,CAAvD,GAAqEL,OAAOK,GAAP,IAAcF,OAAOE,GAAP,CAA5F,EAAtB;AACD;AACF;AACF;;AAED,SAAON,UAAUC,MAAV,EAAkB,GAAGC,OAArB,CAAP;AACD,CAhBD",
+      "file": "mergeObjects.js",
+      "sourceRoot": "/app/dist",
+      "sourcesContent": [
+        "/**\n * Simple object check.\n * @param item\n * @returns {boolean}\n */\nfunction isObject(item) {\n  return (item && typeof item === 'object' && !Array.isArray(item));\n}\n\n/**\n * Deep merge two objects.\n * @param target\n * @param ...sources\n */\nmodule.exports = function mergeDeep(target, ...sources) {\n  if (!sources.length) return target;\n  const source = sources.shift();\n\n  if (isObject(target) && isObject(source)) {\n    for (const key in source) {\n      if (isObject(source[key])) {\n        if (!target[key]) Object.assign(target, { [key]: {} });\n        mergeDeep(target[key], source[key]);\n      } else {\n        Object.assign(target, { [key]: (isObject(source[key]) && typeof source[key] === \"\") ? source[key] : target[key] + source[key] });\n      }\n    }\n  }\n\n  return mergeDeep(target, ...sources);\n}"
+      ]
+    },
+    "mtime": 1524620361951
+  },
+  "{\"filename\":\"/app/dist/findTier.js\",\"env\":{},\"retainLines\":false,\"highlightCode\":true,\"suppressDeprecationMessages\":false,\"presets\":[],\"plugins\":[],\"ignore\":[],\"code\":true,\"metadata\":true,\"ast\":true,\"comments\":true,\"compact\":\"auto\",\"minified\":false,\"sourceRoot\":\"/app/dist\",\"babelrc\":true,\"sourceType\":\"module\",\"moduleIds\":false,\"passPerPreset\":false,\"parserOpts\":false,\"generatorOpts\":false}:6.26.0": {
+    "metadata": {
+      "usedHelpers": [],
+      "marked": [],
+      "modules": {
+        "imports": [],
+        "exports": {
+          "exported": [],
+          "specifiers": []
+        }
+      }
+    },
+    "options": {
+      "filename": "/app/dist/findTier.js",
+      "filenameRelative": "/app/dist/findTier.js",
+      "env": {},
+      "retainLines": false,
+      "highlightCode": true,
+      "suppressDeprecationMessages": false,
+      "presets": [],
+      "plugins": [],
+      "ignore": [],
+      "code": true,
+      "metadata": true,
+      "ast": false,
+      "comments": true,
+      "compact": "auto",
+      "minified": false,
+      "sourceMaps": "both",
+      "sourceMapTarget": "findTier.js",
+      "sourceFileName": "findTier.js",
+      "sourceRoot": "/app/dist",
+      "babelrc": false,
+      "sourceType": "module",
+      "moduleRoot": "/app/dist",
+      "moduleIds": false,
+      "passPerPreset": false,
+      "parserOpts": false,
+      "generatorOpts": false,
+      "basename": "findTier"
+    },
+    "ignored": false,
+    "code": "// import data\nconst tiers = require('../data/tiers');\n\n//@param: numeric Visual Skill Tier\n//returns name of skill tier\nmodule.exports = function (vst) {\n  const iterator = tiers.keys();\n  var skillTier = \"Unranked\";\n\n  tiers.forEach((value, key, map) => {\n    if (key <= vst) skillTier = value;\n  });\n\n  return skillTier;\n};\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImZpbmRUaWVyLmpzIl0sIm5hbWVzIjpbInRpZXJzIiwicmVxdWlyZSIsIm1vZHVsZSIsImV4cG9ydHMiLCJ2c3QiLCJpdGVyYXRvciIsImtleXMiLCJza2lsbFRpZXIiLCJmb3JFYWNoIiwidmFsdWUiLCJrZXkiLCJtYXAiXSwibWFwcGluZ3MiOiJBQUFBO0FBQ0EsTUFBTUEsUUFBUUMsUUFBUSxlQUFSLENBQWQ7O0FBRUE7QUFDQTtBQUNBQyxPQUFPQyxPQUFQLEdBQWlCLFVBQVVDLEdBQVYsRUFBZTtBQUM5QixRQUFNQyxXQUFXTCxNQUFNTSxJQUFOLEVBQWpCO0FBQ0EsTUFBSUMsWUFBWSxVQUFoQjs7QUFFQVAsUUFBTVEsT0FBTixDQUFlLENBQUNDLEtBQUQsRUFBUUMsR0FBUixFQUFhQyxHQUFiLEtBQXFCO0FBQ2xDLFFBQUlELE9BQU9OLEdBQVgsRUFBZ0JHLFlBQVlFLEtBQVo7QUFDakIsR0FGRDs7QUFJQSxTQUFPRixTQUFQO0FBQ0QsQ0FURCIsImZpbGUiOiJmaW5kVGllci5qcyIsInNvdXJjZVJvb3QiOiIvYXBwL2Rpc3QiLCJzb3VyY2VzQ29udGVudCI6WyIvLyBpbXBvcnQgZGF0YVxuY29uc3QgdGllcnMgPSByZXF1aXJlKCcuLi9kYXRhL3RpZXJzJyk7XG5cbi8vQHBhcmFtOiBudW1lcmljIFZpc3VhbCBTa2lsbCBUaWVyXG4vL3JldHVybnMgbmFtZSBvZiBza2lsbCB0aWVyXG5tb2R1bGUuZXhwb3J0cyA9IGZ1bmN0aW9uICh2c3QpIHtcbiAgY29uc3QgaXRlcmF0b3IgPSB0aWVycy5rZXlzKCk7XG4gIHZhciBza2lsbFRpZXIgPSBcIlVucmFua2VkXCI7XG4gIFxuICB0aWVycy5mb3JFYWNoKCAodmFsdWUsIGtleSwgbWFwKSA9PiB7XG4gICAgaWYgKGtleSA8PSB2c3QpIHNraWxsVGllciA9IHZhbHVlO1xuICB9KTtcbiAgXG4gIHJldHVybiBza2lsbFRpZXI7XG59Il19",
+    "ast": null,
+    "map": {
+      "version": 3,
+      "sources": [
+        "findTier.js"
+      ],
+      "names": [
+        "tiers",
+        "require",
+        "module",
+        "exports",
+        "vst",
+        "iterator",
+        "keys",
+        "skillTier",
+        "forEach",
+        "value",
+        "key",
+        "map"
+      ],
+      "mappings": "AAAA;AACA,MAAMA,QAAQC,QAAQ,eAAR,CAAd;;AAEA;AACA;AACAC,OAAOC,OAAP,GAAiB,UAAUC,GAAV,EAAe;AAC9B,QAAMC,WAAWL,MAAMM,IAAN,EAAjB;AACA,MAAIC,YAAY,UAAhB;;AAEAP,QAAMQ,OAAN,CAAe,CAACC,KAAD,EAAQC,GAAR,EAAaC,GAAb,KAAqB;AAClC,QAAID,OAAON,GAAX,EAAgBG,YAAYE,KAAZ;AACjB,GAFD;;AAIA,SAAOF,SAAP;AACD,CATD",
+      "file": "findTier.js",
+      "sourceRoot": "/app/dist",
+      "sourcesContent": [
+        "// import data\nconst tiers = require('../data/tiers');\n\n//@param: numeric Visual Skill Tier\n//returns name of skill tier\nmodule.exports = function (vst) {\n  const iterator = tiers.keys();\n  var skillTier = \"Unranked\";\n  \n  tiers.forEach( (value, key, map) => {\n    if (key <= vst) skillTier = value;\n  });\n  \n  return skillTier;\n}"
+      ]
+    },
+    "mtime": 1524625164594
+  },
+  "{\"filename\":\"/app/dist/sorter.js\",\"env\":{},\"retainLines\":false,\"highlightCode\":true,\"suppressDeprecationMessages\":false,\"presets\":[],\"plugins\":[],\"ignore\":[],\"code\":true,\"metadata\":true,\"ast\":true,\"comments\":true,\"compact\":\"auto\",\"minified\":false,\"sourceRoot\":\"/app/dist\",\"babelrc\":true,\"sourceType\":\"module\",\"moduleIds\":false,\"passPerPreset\":false,\"parserOpts\":false,\"generatorOpts\":false}:6.26.0": {
+    "metadata": {
+      "usedHelpers": [],
+      "marked": [],
+      "modules": {
+        "imports": [],
+        "exports": {
+          "exported": [],
+          "specifiers": []
+        }
+      }
+    },
+    "options": {
+      "filename": "/app/dist/sorter.js",
+      "filenameRelative": "/app/dist/sorter.js",
+      "env": {},
+      "retainLines": false,
+      "highlightCode": true,
+      "suppressDeprecationMessages": false,
+      "presets": [],
+      "plugins": [],
+      "ignore": [],
+      "code": true,
+      "metadata": true,
+      "ast": false,
+      "comments": true,
+      "compact": "auto",
+      "minified": false,
+      "sourceMaps": "both",
+      "sourceMapTarget": "sorter.js",
+      "sourceFileName": "sorter.js",
+      "sourceRoot": "/app/dist",
+      "babelrc": false,
+      "sourceType": "module",
+      "moduleRoot": "/app/dist",
+      "moduleIds": false,
+      "passPerPreset": false,
+      "parserOpts": false,
+      "generatorOpts": false,
+      "basename": "sorter"
+    },
+    "ignored": false,
+    "code": "module.exports = function (obj) {\n  var sortedOutput = {};\n  Object.keys(obj).sort().forEach(function (key) {\n    sortedOutput[key] = obj[key];\n  });\n  return sortedOutput;\n};\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNvcnRlci5qcyJdLCJuYW1lcyI6WyJtb2R1bGUiLCJleHBvcnRzIiwib2JqIiwic29ydGVkT3V0cHV0IiwiT2JqZWN0Iiwia2V5cyIsInNvcnQiLCJmb3JFYWNoIiwia2V5Il0sIm1hcHBpbmdzIjoiQUFBQUEsT0FBT0MsT0FBUCxHQUFpQixVQUFVQyxHQUFWLEVBQWU7QUFDOUIsTUFBSUMsZUFBZSxFQUFuQjtBQUNBQyxTQUFPQyxJQUFQLENBQVlILEdBQVosRUFBaUJJLElBQWpCLEdBQXdCQyxPQUF4QixDQUFnQyxVQUFTQyxHQUFULEVBQWM7QUFDNUNMLGlCQUFhSyxHQUFiLElBQW9CTixJQUFJTSxHQUFKLENBQXBCO0FBQ0QsR0FGRDtBQUdBLFNBQU9MLFlBQVA7QUFDRCxDQU5EIiwiZmlsZSI6InNvcnRlci5qcyIsInNvdXJjZVJvb3QiOiIvYXBwL2Rpc3QiLCJzb3VyY2VzQ29udGVudCI6WyJtb2R1bGUuZXhwb3J0cyA9IGZ1bmN0aW9uIChvYmopIHtcbiAgdmFyIHNvcnRlZE91dHB1dCA9IHt9O1xuICBPYmplY3Qua2V5cyhvYmopLnNvcnQoKS5mb3JFYWNoKGZ1bmN0aW9uKGtleSkge1xuICAgIHNvcnRlZE91dHB1dFtrZXldID0gb2JqW2tleV07XG4gIH0pO1xuICByZXR1cm4gc29ydGVkT3V0cHV0O1xufSJdfQ==",
+    "ast": null,
+    "map": {
+      "version": 3,
+      "sources": [
+        "sorter.js"
+      ],
+      "names": [
+        "module",
+        "exports",
+        "obj",
+        "sortedOutput",
+        "Object",
+        "keys",
+        "sort",
+        "forEach",
+        "key"
+      ],
+      "mappings": "AAAAA,OAAOC,OAAP,GAAiB,UAAUC,GAAV,EAAe;AAC9B,MAAIC,eAAe,EAAnB;AACAC,SAAOC,IAAP,CAAYH,GAAZ,EAAiBI,IAAjB,GAAwBC,OAAxB,CAAgC,UAASC,GAAT,EAAc;AAC5CL,iBAAaK,GAAb,IAAoBN,IAAIM,GAAJ,CAApB;AACD,GAFD;AAGA,SAAOL,YAAP;AACD,CAND",
+      "file": "sorter.js",
+      "sourceRoot": "/app/dist",
+      "sourcesContent": [
+        "module.exports = function (obj) {\n  var sortedOutput = {};\n  Object.keys(obj).sort().forEach(function(key) {\n    sortedOutput[key] = obj[key];\n  });\n  return sortedOutput;\n}"
+      ]
+    },
+    "mtime": 1524626290260
+  },
+  "{\"filename\":\"/app/dist/sort.js\",\"env\":{},\"retainLines\":false,\"highlightCode\":true,\"suppressDeprecationMessages\":false,\"presets\":[],\"plugins\":[],\"ignore\":[],\"code\":true,\"metadata\":true,\"ast\":true,\"comments\":true,\"compact\":\"auto\",\"minified\":false,\"sourceRoot\":\"/app/dist\",\"babelrc\":true,\"sourceType\":\"module\",\"moduleIds\":false,\"passPerPreset\":false,\"parserOpts\":false,\"generatorOpts\":false}:6.26.0": {
+    "metadata": {
+      "usedHelpers": [],
+      "marked": [],
+      "modules": {
+        "imports": [],
+        "exports": {
+          "exported": [],
+          "specifiers": []
+        }
+      }
+    },
+    "options": {
+      "filename": "/app/dist/sort.js",
+      "filenameRelative": "/app/dist/sort.js",
+      "env": {},
+      "retainLines": false,
+      "highlightCode": true,
+      "suppressDeprecationMessages": false,
+      "presets": [],
+      "plugins": [],
+      "ignore": [],
+      "code": true,
+      "metadata": true,
+      "ast": false,
+      "comments": true,
+      "compact": "auto",
+      "minified": false,
+      "sourceMaps": "both",
+      "sourceMapTarget": "sort.js",
+      "sourceFileName": "sort.js",
+      "sourceRoot": "/app/dist",
+      "babelrc": false,
+      "sourceType": "module",
+      "moduleRoot": "/app/dist",
+      "moduleIds": false,
+      "passPerPreset": false,
+      "parserOpts": false,
+      "generatorOpts": false,
+      "basename": "sort"
+    },
+    "ignored": false,
+    "code": "module.exports = function (obj) {\n  var sortedOutput = {};\n  Object.keys(obj).sort().forEach(function (key) {\n    sortedOutput[key] = obj[key];\n  });\n  return sortedOutput;\n};\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNvcnQuanMiXSwibmFtZXMiOlsibW9kdWxlIiwiZXhwb3J0cyIsIm9iaiIsInNvcnRlZE91dHB1dCIsIk9iamVjdCIsImtleXMiLCJzb3J0IiwiZm9yRWFjaCIsImtleSJdLCJtYXBwaW5ncyI6IkFBQUFBLE9BQU9DLE9BQVAsR0FBaUIsVUFBVUMsR0FBVixFQUFlO0FBQzlCLE1BQUlDLGVBQWUsRUFBbkI7QUFDQUMsU0FBT0MsSUFBUCxDQUFZSCxHQUFaLEVBQWlCSSxJQUFqQixHQUF3QkMsT0FBeEIsQ0FBZ0MsVUFBU0MsR0FBVCxFQUFjO0FBQzVDTCxpQkFBYUssR0FBYixJQUFvQk4sSUFBSU0sR0FBSixDQUFwQjtBQUNELEdBRkQ7QUFHQSxTQUFPTCxZQUFQO0FBQ0QsQ0FORCIsImZpbGUiOiJzb3J0LmpzIiwic291cmNlUm9vdCI6Ii9hcHAvZGlzdCIsInNvdXJjZXNDb250ZW50IjpbIm1vZHVsZS5leHBvcnRzID0gZnVuY3Rpb24gKG9iaikge1xuICB2YXIgc29ydGVkT3V0cHV0ID0ge307XG4gIE9iamVjdC5rZXlzKG9iaikuc29ydCgpLmZvckVhY2goZnVuY3Rpb24oa2V5KSB7XG4gICAgc29ydGVkT3V0cHV0W2tleV0gPSBvYmpba2V5XTtcbiAgfSk7XG4gIHJldHVybiBzb3J0ZWRPdXRwdXQ7XG59Il19",
+    "ast": null,
+    "map": {
+      "version": 3,
+      "sources": [
+        "sort.js"
+      ],
+      "names": [
+        "module",
+        "exports",
+        "obj",
+        "sortedOutput",
+        "Object",
+        "keys",
+        "sort",
+        "forEach",
+        "key"
+      ],
+      "mappings": "AAAAA,OAAOC,OAAP,GAAiB,UAAUC,GAAV,EAAe;AAC9B,MAAIC,eAAe,EAAnB;AACAC,SAAOC,IAAP,CAAYH,GAAZ,EAAiBI,IAAjB,GAAwBC,OAAxB,CAAgC,UAASC,GAAT,EAAc;AAC5CL,iBAAaK,GAAb,IAAoBN,IAAIM,GAAJ,CAApB;AACD,GAFD;AAGA,SAAOL,YAAP;AACD,CAND",
+      "file": "sort.js",
+      "sourceRoot": "/app/dist",
+      "sourcesContent": [
+        "module.exports = function (obj) {\n  var sortedOutput = {};\n  Object.keys(obj).sort().forEach(function(key) {\n    sortedOutput[key] = obj[key];\n  });\n  return sortedOutput;\n}"
+      ]
+    },
+    "mtime": 1524626290260
+  },
+  "{\"filename\":\"/app/dist/mining/findTier.js\",\"env\":{},\"retainLines\":false,\"highlightCode\":true,\"suppressDeprecationMessages\":false,\"presets\":[],\"plugins\":[],\"ignore\":[],\"code\":true,\"metadata\":true,\"ast\":true,\"comments\":true,\"compact\":\"auto\",\"minified\":false,\"sourceRoot\":\"/app/dist/mining\",\"babelrc\":true,\"sourceType\":\"module\",\"moduleIds\":false,\"passPerPreset\":false,\"parserOpts\":false,\"generatorOpts\":false}:6.26.0": {
+    "metadata": {
+      "usedHelpers": [],
+      "marked": [],
+      "modules": {
+        "imports": [],
+        "exports": {
+          "exported": [],
+          "specifiers": []
+        }
+      }
+    },
+    "options": {
+      "filename": "/app/dist/mining/findTier.js",
+      "filenameRelative": "/app/dist/mining/findTier.js",
+      "env": {},
+      "retainLines": false,
+      "highlightCode": true,
+      "suppressDeprecationMessages": false,
+      "presets": [],
+      "plugins": [],
+      "ignore": [],
+      "code": true,
+      "metadata": true,
+      "ast": false,
+      "comments": true,
+      "compact": "auto",
+      "minified": false,
+      "sourceMaps": "both",
+      "sourceMapTarget": "findTier.js",
+      "sourceFileName": "findTier.js",
+      "sourceRoot": "/app/dist/mining",
+      "babelrc": false,
+      "sourceType": "module",
+      "moduleRoot": "/app/dist/mining",
+      "moduleIds": false,
+      "passPerPreset": false,
+      "parserOpts": false,
+      "generatorOpts": false,
+      "basename": "findTier"
+    },
+    "ignored": false,
+    "code": "// import data\nconst tiers = require('../../data/tiers');\n\n//@param: numeric Visual Skill Tier\n//returns name of skill tier\nmodule.exports = function (vst) {\n  const iterator = tiers.keys();\n  var skillTier = \"Unranked\";\n\n  tiers.forEach((value, key, map) => {\n    if (key <= vst) skillTier = value;\n  });\n\n  return skillTier;\n};\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImZpbmRUaWVyLmpzIl0sIm5hbWVzIjpbInRpZXJzIiwicmVxdWlyZSIsIm1vZHVsZSIsImV4cG9ydHMiLCJ2c3QiLCJpdGVyYXRvciIsImtleXMiLCJza2lsbFRpZXIiLCJmb3JFYWNoIiwidmFsdWUiLCJrZXkiLCJtYXAiXSwibWFwcGluZ3MiOiJBQUFBO0FBQ0EsTUFBTUEsUUFBUUMsUUFBUSxrQkFBUixDQUFkOztBQUVBO0FBQ0E7QUFDQUMsT0FBT0MsT0FBUCxHQUFpQixVQUFVQyxHQUFWLEVBQWU7QUFDOUIsUUFBTUMsV0FBV0wsTUFBTU0sSUFBTixFQUFqQjtBQUNBLE1BQUlDLFlBQVksVUFBaEI7O0FBRUFQLFFBQU1RLE9BQU4sQ0FBZSxDQUFDQyxLQUFELEVBQVFDLEdBQVIsRUFBYUMsR0FBYixLQUFxQjtBQUNsQyxRQUFJRCxPQUFPTixHQUFYLEVBQWdCRyxZQUFZRSxLQUFaO0FBQ2pCLEdBRkQ7O0FBSUEsU0FBT0YsU0FBUDtBQUNELENBVEQiLCJmaWxlIjoiZmluZFRpZXIuanMiLCJzb3VyY2VSb290IjoiL2FwcC9kaXN0L21pbmluZyIsInNvdXJjZXNDb250ZW50IjpbIi8vIGltcG9ydCBkYXRhXG5jb25zdCB0aWVycyA9IHJlcXVpcmUoJy4uLy4uL2RhdGEvdGllcnMnKTtcblxuLy9AcGFyYW06IG51bWVyaWMgVmlzdWFsIFNraWxsIFRpZXJcbi8vcmV0dXJucyBuYW1lIG9mIHNraWxsIHRpZXJcbm1vZHVsZS5leHBvcnRzID0gZnVuY3Rpb24gKHZzdCkge1xuICBjb25zdCBpdGVyYXRvciA9IHRpZXJzLmtleXMoKTtcbiAgdmFyIHNraWxsVGllciA9IFwiVW5yYW5rZWRcIjtcbiAgXG4gIHRpZXJzLmZvckVhY2goICh2YWx1ZSwga2V5LCBtYXApID0+IHtcbiAgICBpZiAoa2V5IDw9IHZzdCkgc2tpbGxUaWVyID0gdmFsdWU7XG4gIH0pO1xuICBcbiAgcmV0dXJuIHNraWxsVGllcjtcbn0iXX0=",
+    "ast": null,
+    "map": {
+      "version": 3,
+      "sources": [
+        "findTier.js"
+      ],
+      "names": [
+        "tiers",
+        "require",
+        "module",
+        "exports",
+        "vst",
+        "iterator",
+        "keys",
+        "skillTier",
+        "forEach",
+        "value",
+        "key",
+        "map"
+      ],
+      "mappings": "AAAA;AACA,MAAMA,QAAQC,QAAQ,kBAAR,CAAd;;AAEA;AACA;AACAC,OAAOC,OAAP,GAAiB,UAAUC,GAAV,EAAe;AAC9B,QAAMC,WAAWL,MAAMM,IAAN,EAAjB;AACA,MAAIC,YAAY,UAAhB;;AAEAP,QAAMQ,OAAN,CAAe,CAACC,KAAD,EAAQC,GAAR,EAAaC,GAAb,KAAqB;AAClC,QAAID,OAAON,GAAX,EAAgBG,YAAYE,KAAZ;AACjB,GAFD;;AAIA,SAAOF,SAAP;AACD,CATD",
+      "file": "findTier.js",
+      "sourceRoot": "/app/dist/mining",
+      "sourcesContent": [
+        "// import data\nconst tiers = require('../../data/tiers');\n\n//@param: numeric Visual Skill Tier\n//returns name of skill tier\nmodule.exports = function (vst) {\n  const iterator = tiers.keys();\n  var skillTier = \"Unranked\";\n  \n  tiers.forEach( (value, key, map) => {\n    if (key <= vst) skillTier = value;\n  });\n  \n  return skillTier;\n}"
+      ]
+    },
+    "mtime": 1524670778515
+  },
+  "{\"filename\":\"/app/dist/analysis/sort.js\",\"env\":{},\"retainLines\":false,\"highlightCode\":true,\"suppressDeprecationMessages\":false,\"presets\":[],\"plugins\":[],\"ignore\":[],\"code\":true,\"metadata\":true,\"ast\":true,\"comments\":true,\"compact\":\"auto\",\"minified\":false,\"sourceRoot\":\"/app/dist/analysis\",\"babelrc\":true,\"sourceType\":\"module\",\"moduleIds\":false,\"passPerPreset\":false,\"parserOpts\":false,\"generatorOpts\":false}:6.26.0": {
+    "metadata": {
+      "usedHelpers": [],
+      "marked": [],
+      "modules": {
+        "imports": [],
+        "exports": {
+          "exported": [],
+          "specifiers": []
+        }
+      }
+    },
+    "options": {
+      "filename": "/app/dist/analysis/sort.js",
+      "filenameRelative": "/app/dist/analysis/sort.js",
+      "env": {},
+      "retainLines": false,
+      "highlightCode": true,
+      "suppressDeprecationMessages": false,
+      "presets": [],
+      "plugins": [],
+      "ignore": [],
+      "code": true,
+      "metadata": true,
+      "ast": false,
+      "comments": true,
+      "compact": "auto",
+      "minified": false,
+      "sourceMaps": "both",
+      "sourceMapTarget": "sort.js",
+      "sourceFileName": "sort.js",
+      "sourceRoot": "/app/dist/analysis",
+      "babelrc": false,
+      "sourceType": "module",
+      "moduleRoot": "/app/dist/analysis",
+      "moduleIds": false,
+      "passPerPreset": false,
+      "parserOpts": false,
+      "generatorOpts": false,
+      "basename": "sort"
+    },
+    "ignored": false,
+    "code": "module.exports = function (obj) {\n  var sortedOutput = {};\n  Object.keys(obj).sort().forEach(function (key) {\n    sortedOutput[key] = obj[key];\n  });\n  return sortedOutput;\n};\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNvcnQuanMiXSwibmFtZXMiOlsibW9kdWxlIiwiZXhwb3J0cyIsIm9iaiIsInNvcnRlZE91dHB1dCIsIk9iamVjdCIsImtleXMiLCJzb3J0IiwiZm9yRWFjaCIsImtleSJdLCJtYXBwaW5ncyI6IkFBQUFBLE9BQU9DLE9BQVAsR0FBaUIsVUFBVUMsR0FBVixFQUFlO0FBQzlCLE1BQUlDLGVBQWUsRUFBbkI7QUFDQUMsU0FBT0MsSUFBUCxDQUFZSCxHQUFaLEVBQWlCSSxJQUFqQixHQUF3QkMsT0FBeEIsQ0FBZ0MsVUFBU0MsR0FBVCxFQUFjO0FBQzVDTCxpQkFBYUssR0FBYixJQUFvQk4sSUFBSU0sR0FBSixDQUFwQjtBQUNELEdBRkQ7QUFHQSxTQUFPTCxZQUFQO0FBQ0QsQ0FORCIsImZpbGUiOiJzb3J0LmpzIiwic291cmNlUm9vdCI6Ii9hcHAvZGlzdC9hbmFseXNpcyIsInNvdXJjZXNDb250ZW50IjpbIm1vZHVsZS5leHBvcnRzID0gZnVuY3Rpb24gKG9iaikge1xuICB2YXIgc29ydGVkT3V0cHV0ID0ge307XG4gIE9iamVjdC5rZXlzKG9iaikuc29ydCgpLmZvckVhY2goZnVuY3Rpb24oa2V5KSB7XG4gICAgc29ydGVkT3V0cHV0W2tleV0gPSBvYmpba2V5XTtcbiAgfSk7XG4gIHJldHVybiBzb3J0ZWRPdXRwdXQ7XG59Il19",
+    "ast": null,
+    "map": {
+      "version": 3,
+      "sources": [
+        "sort.js"
+      ],
+      "names": [
+        "module",
+        "exports",
+        "obj",
+        "sortedOutput",
+        "Object",
+        "keys",
+        "sort",
+        "forEach",
+        "key"
+      ],
+      "mappings": "AAAAA,OAAOC,OAAP,GAAiB,UAAUC,GAAV,EAAe;AAC9B,MAAIC,eAAe,EAAnB;AACAC,SAAOC,IAAP,CAAYH,GAAZ,EAAiBI,IAAjB,GAAwBC,OAAxB,CAAgC,UAASC,GAAT,EAAc;AAC5CL,iBAAaK,GAAb,IAAoBN,IAAIM,GAAJ,CAApB;AACD,GAFD;AAGA,SAAOL,YAAP;AACD,CAND",
+      "file": "sort.js",
+      "sourceRoot": "/app/dist/analysis",
+      "sourcesContent": [
+        "module.exports = function (obj) {\n  var sortedOutput = {};\n  Object.keys(obj).sort().forEach(function(key) {\n    sortedOutput[key] = obj[key];\n  });\n  return sortedOutput;\n}"
+      ]
+    },
+    "mtime": 1524626290260
+  },
+  "{\"filename\":\"/app/dist/analysis/findCounters.js\",\"env\":{},\"retainLines\":false,\"highlightCode\":true,\"suppressDeprecationMessages\":false,\"presets\":[],\"plugins\":[],\"ignore\":[],\"code\":true,\"metadata\":true,\"ast\":true,\"comments\":true,\"compact\":\"auto\",\"minified\":false,\"sourceRoot\":\"/app/dist/analysis\",\"babelrc\":true,\"sourceType\":\"module\",\"moduleIds\":false,\"passPerPreset\":false,\"parserOpts\":false,\"generatorOpts\":false}:6.26.0": {
+    "metadata": {
+      "usedHelpers": [],
+      "marked": [],
+      "modules": {
+        "imports": [],
+        "exports": {
+          "exported": [],
+          "specifiers": []
+        }
+      }
+    },
+    "options": {
+      "filename": "/app/dist/analysis/findCounters.js",
+      "filenameRelative": "/app/dist/analysis/findCounters.js",
+      "env": {},
+      "retainLines": false,
+      "highlightCode": true,
+      "suppressDeprecationMessages": false,
+      "presets": [],
+      "plugins": [],
+      "ignore": [],
+      "code": true,
+      "metadata": true,
+      "ast": false,
+      "comments": true,
+      "compact": "auto",
+      "minified": false,
+      "sourceMaps": "both",
+      "sourceMapTarget": "findCounters.js",
+      "sourceFileName": "findCounters.js",
+      "sourceRoot": "/app/dist/analysis",
+      "babelrc": false,
+      "sourceType": "module",
+      "moduleRoot": "/app/dist/analysis",
+      "moduleIds": false,
+      "passPerPreset": false,
+      "parserOpts": false,
+      "generatorOpts": false,
+      "basename": "findCounters"
+    },
+    "ignored": false,
+    "code": "//data: accepts outputUntiered\n//TODO: rework formula, currently is unfavored to heroes with low overall winrates\nmodule.exports = function (data) {\n  var response = [];\n  for (const hero in data) {\n    if (hero !== \"info\") {\n      for (const enemy in data[hero]) {\n        if (data[hero][enemy].winrate - data[hero][\"_overall\"].winrate > 0.075 && data[hero][enemy].matches > 100) {\n          response.push({ winner: hero, loser: enemy, winrate: data[hero][enemy].winrate, difference: data[hero][enemy].winrate - data[hero][\"_overall\"].winrate, matches: data[hero][enemy].matches });\n        }\n      }\n    }\n  }\n  response.sort(function (a, b) {\n    if (a.difference < b.difference) return 1;else return -1;\n  });\n  return response;\n};\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImZpbmRDb3VudGVycy5qcyJdLCJuYW1lcyI6WyJtb2R1bGUiLCJleHBvcnRzIiwiZGF0YSIsInJlc3BvbnNlIiwiaGVybyIsImVuZW15Iiwid2lucmF0ZSIsIm1hdGNoZXMiLCJwdXNoIiwid2lubmVyIiwibG9zZXIiLCJkaWZmZXJlbmNlIiwic29ydCIsImEiLCJiIl0sIm1hcHBpbmdzIjoiQUFBQTtBQUNBO0FBQ0FBLE9BQU9DLE9BQVAsR0FBaUIsVUFBU0MsSUFBVCxFQUFlO0FBQzlCLE1BQUlDLFdBQVcsRUFBZjtBQUNBLE9BQUksTUFBTUMsSUFBVixJQUFrQkYsSUFBbEIsRUFBd0I7QUFDdEIsUUFBR0UsU0FBUyxNQUFaLEVBQW9CO0FBQ2xCLFdBQUksTUFBTUMsS0FBVixJQUFtQkgsS0FBS0UsSUFBTCxDQUFuQixFQUErQjtBQUM3QixZQUFJRixLQUFLRSxJQUFMLEVBQVdDLEtBQVgsRUFBa0JDLE9BQWxCLEdBQTRCSixLQUFLRSxJQUFMLEVBQVcsVUFBWCxFQUF1QkUsT0FBcEQsR0FBK0QsS0FBL0QsSUFBd0VKLEtBQUtFLElBQUwsRUFBV0MsS0FBWCxFQUFrQkUsT0FBbEIsR0FBNEIsR0FBdkcsRUFBNEc7QUFDMUdKLG1CQUFTSyxJQUFULENBQWMsRUFBQ0MsUUFBUUwsSUFBVCxFQUFlTSxPQUFPTCxLQUF0QixFQUE2QkMsU0FBU0osS0FBS0UsSUFBTCxFQUFXQyxLQUFYLEVBQWtCQyxPQUF4RCxFQUFpRUssWUFBWVQsS0FBS0UsSUFBTCxFQUFXQyxLQUFYLEVBQWtCQyxPQUFsQixHQUE0QkosS0FBS0UsSUFBTCxFQUFXLFVBQVgsRUFBdUJFLE9BQWhJLEVBQXlJQyxTQUFTTCxLQUFLRSxJQUFMLEVBQVdDLEtBQVgsRUFBa0JFLE9BQXBLLEVBQWQ7QUFDRDtBQUNGO0FBQ0Y7QUFDRjtBQUNESixXQUFTUyxJQUFULENBQWMsVUFBU0MsQ0FBVCxFQUFXQyxDQUFYLEVBQWM7QUFDMUIsUUFBR0QsRUFBRUYsVUFBRixHQUFlRyxFQUFFSCxVQUFwQixFQUFnQyxPQUFPLENBQVAsQ0FBaEMsS0FDSyxPQUFPLENBQUMsQ0FBUjtBQUNOLEdBSEQ7QUFJQSxTQUFPUixRQUFQO0FBQ0QsQ0FoQkQiLCJmaWxlIjoiZmluZENvdW50ZXJzLmpzIiwic291cmNlUm9vdCI6Ii9hcHAvZGlzdC9hbmFseXNpcyIsInNvdXJjZXNDb250ZW50IjpbIi8vZGF0YTogYWNjZXB0cyBvdXRwdXRVbnRpZXJlZFxuLy9UT0RPOiByZXdvcmsgZm9ybXVsYSwgY3VycmVudGx5IGlzIHVuZmF2b3JlZCB0byBoZXJvZXMgd2l0aCBsb3cgb3ZlcmFsbCB3aW5yYXRlc1xubW9kdWxlLmV4cG9ydHMgPSBmdW5jdGlvbihkYXRhKSB7XG4gIHZhciByZXNwb25zZSA9IFtdXG4gIGZvcihjb25zdCBoZXJvIGluIGRhdGEpIHtcbiAgICBpZihoZXJvICE9PSBcImluZm9cIikge1xuICAgICAgZm9yKGNvbnN0IGVuZW15IGluIGRhdGFbaGVyb10pIHtcbiAgICAgICAgaWYoKGRhdGFbaGVyb11bZW5lbXldLndpbnJhdGUgLSBkYXRhW2hlcm9dW1wiX292ZXJhbGxcIl0ud2lucmF0ZSkgPiAwLjA3NSAmJiBkYXRhW2hlcm9dW2VuZW15XS5tYXRjaGVzID4gMTAwKSB7XG4gICAgICAgICAgcmVzcG9uc2UucHVzaCh7d2lubmVyOiBoZXJvLCBsb3NlcjogZW5lbXksIHdpbnJhdGU6IGRhdGFbaGVyb11bZW5lbXldLndpbnJhdGUsIGRpZmZlcmVuY2U6IGRhdGFbaGVyb11bZW5lbXldLndpbnJhdGUgLSBkYXRhW2hlcm9dW1wiX292ZXJhbGxcIl0ud2lucmF0ZSwgbWF0Y2hlczogZGF0YVtoZXJvXVtlbmVteV0ubWF0Y2hlc30pO1xuICAgICAgICB9XG4gICAgICB9XG4gICAgfVxuICB9XG4gIHJlc3BvbnNlLnNvcnQoZnVuY3Rpb24oYSxiKSB7XG4gICAgaWYoYS5kaWZmZXJlbmNlIDwgYi5kaWZmZXJlbmNlKSByZXR1cm4gMTtcbiAgICBlbHNlIHJldHVybiAtMTtcbiAgfSk7XG4gIHJldHVybiByZXNwb25zZTtcbn07Il19",
+    "ast": null,
+    "map": {
+      "version": 3,
+      "sources": [
+        "findCounters.js"
+      ],
+      "names": [
+        "module",
+        "exports",
+        "data",
+        "response",
+        "hero",
+        "enemy",
+        "winrate",
+        "matches",
+        "push",
+        "winner",
+        "loser",
+        "difference",
+        "sort",
+        "a",
+        "b"
+      ],
+      "mappings": "AAAA;AACA;AACAA,OAAOC,OAAP,GAAiB,UAASC,IAAT,EAAe;AAC9B,MAAIC,WAAW,EAAf;AACA,OAAI,MAAMC,IAAV,IAAkBF,IAAlB,EAAwB;AACtB,QAAGE,SAAS,MAAZ,EAAoB;AAClB,WAAI,MAAMC,KAAV,IAAmBH,KAAKE,IAAL,CAAnB,EAA+B;AAC7B,YAAIF,KAAKE,IAAL,EAAWC,KAAX,EAAkBC,OAAlB,GAA4BJ,KAAKE,IAAL,EAAW,UAAX,EAAuBE,OAApD,GAA+D,KAA/D,IAAwEJ,KAAKE,IAAL,EAAWC,KAAX,EAAkBE,OAAlB,GAA4B,GAAvG,EAA4G;AAC1GJ,mBAASK,IAAT,CAAc,EAACC,QAAQL,IAAT,EAAeM,OAAOL,KAAtB,EAA6BC,SAASJ,KAAKE,IAAL,EAAWC,KAAX,EAAkBC,OAAxD,EAAiEK,YAAYT,KAAKE,IAAL,EAAWC,KAAX,EAAkBC,OAAlB,GAA4BJ,KAAKE,IAAL,EAAW,UAAX,EAAuBE,OAAhI,EAAyIC,SAASL,KAAKE,IAAL,EAAWC,KAAX,EAAkBE,OAApK,EAAd;AACD;AACF;AACF;AACF;AACDJ,WAASS,IAAT,CAAc,UAASC,CAAT,EAAWC,CAAX,EAAc;AAC1B,QAAGD,EAAEF,UAAF,GAAeG,EAAEH,UAApB,EAAgC,OAAO,CAAP,CAAhC,KACK,OAAO,CAAC,CAAR;AACN,GAHD;AAIA,SAAOR,QAAP;AACD,CAhBD",
+      "file": "findCounters.js",
+      "sourceRoot": "/app/dist/analysis",
+      "sourcesContent": [
+        "//data: accepts outputUntiered\n//TODO: rework formula, currently is unfavored to heroes with low overall winrates\nmodule.exports = function(data) {\n  var response = []\n  for(const hero in data) {\n    if(hero !== \"info\") {\n      for(const enemy in data[hero]) {\n        if((data[hero][enemy].winrate - data[hero][\"_overall\"].winrate) > 0.075 && data[hero][enemy].matches > 100) {\n          response.push({winner: hero, loser: enemy, winrate: data[hero][enemy].winrate, difference: data[hero][enemy].winrate - data[hero][\"_overall\"].winrate, matches: data[hero][enemy].matches});\n        }\n      }\n    }\n  }\n  response.sort(function(a,b) {\n    if(a.difference < b.difference) return 1;\n    else return -1;\n  });\n  return response;\n};"
+      ]
+    },
+    "mtime": 1524904404732
+  }
+}
